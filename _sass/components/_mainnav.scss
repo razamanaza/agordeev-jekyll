@@ -1,0 +1,66 @@
+
+
+.main-nav-items {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 50%;
+  margin-left: -calc($mainnav-size * 5 / 2);
+  box-shadow: 2px 2px 3px $bg-color;
+  &:last-child {
+    border: none;
+  }
+}
+
+.main-nav-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  a {
+    font-size: 0;
+    line-height: $mainnav-size;
+    display: inline-block;
+    width: $mainnav-size;
+    height: $mainnav-size;
+    background-color: $main-color;
+    position: relative;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: $mainnav-icon-size;
+      height: $mainnav-icon-size;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-top: 12px;
+      margin-left: 13px;
+    }
+  }
+}
+
+.nav-top {
+  a {
+    background-color: $bg-color;
+    border: none;
+    &::before {
+      background-image: url('../img/menu.svg');
+    }
+  }
+}
+
+.nav-profile a::before {
+  background-image: url('../img/profile-color.svg');
+}
+
+.nav-resume a::before {
+  background-image: url('../img/resume-color.svg');
+}
+
+.nav-portfolio a::before {
+  background-image: url('../img/portfolio-color.svg');
+}
+
+.nav-contact a::before {
+  background-image: url('../img/contact-color.svg');
+}

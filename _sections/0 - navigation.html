@@ -1,0 +1,9 @@
+---
+---
+<nav class="main-nav">
+  <ul class="main-nav-items">
+    {% for item in site.data.navigation %}
+    <li class="nav-{{ item.link }} main-nav-item"><a href="#{{ item.link }}" title="{{ item.name }}">{{ item.name }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

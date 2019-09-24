@@ -1,0 +1,10 @@
+- name: Home
+  link: top
+- name: Profile
+  link: profile
+- name: Resume
+  link: resume
+- name: Portfolio
+  link: portfolio
+- name: Contact
+  link: contact

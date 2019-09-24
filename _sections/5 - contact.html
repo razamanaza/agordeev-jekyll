@@ -1,0 +1,29 @@
+---
+---
+<footer class="contact container section-figure" id="contact">
+  <h2 class="section-header">Contact</h2>
+  <div class="row">
+    <div class="column">
+      <form id="footer-contact-form" class="footer-contact-form" action="https://formspree.io/razamanaza@gmail.com" method="POST">
+        <label for="footer-contact-name">Name</label>
+        <input type="text" id="footer-contact-name" name="Name" placeholder="name" required>
+        <label for="footer-contact-subject">Subject</label>
+        <input type="text" id="footer-contact-subject" name="Subject" placeholder="subject" required>
+        <label for="footer-contact-message">Message</label>
+        <textarea id="footer-contact-message" placeholder="message"></textarea>
+        <button type="submit" class="button" value="Send">Send</button>
+      </form>
+    </div>
+    <div class="column">
+      <div class="footer-contacts">
+        <a class="phone" href="tel:0226571736">022-657-17-36</a>
+        <a class="email" href="mailto:razamanaza@gmail.com">razamanaza@gmail.com</a>
+        <a class="skype" href="skype:razamanaza">razamanaza</a>
+      </div>
+      <div class="online-links">
+        {% include online-links.html %}
+      </div>
+    </div>
+  </div>
+  <div class="totop"><a href="#top"></a></div>
+</footer>
